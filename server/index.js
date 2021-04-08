@@ -1,4 +1,5 @@
 const express = require("express");
+const path = require("path");
 var cors = require("cors");
 
 const logger = require("./logger");
@@ -20,7 +21,9 @@ app.post("/logger", (req, res, next) => {
 app.get("/", (req, res, next) => {
   res.status(200).send("Logger initialised");
 });
-
+app.get("*", (req, res) => {
+  res.sendFile(path.resolve("build", "index.html"));
+});
 app.listen(7000, () => {
   console.log("listening on port 7000");
 });
