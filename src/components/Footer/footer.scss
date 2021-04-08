@@ -1,0 +1,115 @@
+@import "~normalize-scss/sass/normalize";
+
+@import "../../common-styles/variables";
+
+@import "../../common-styles/theme-selectors/tentkotta-webapp.scss";
+
+.footer,
+.footer a {
+  font: var(--tentkotta-font-style-normal) normal var(--tentkotta-font-weight-normal) 16px /
+    var(--tentkotta-line-spacing-38) var(--tentkotta-font-family-inter);
+  letter-spacing: var(--tentkotta-character-spacing-0);
+  color: var(--tentkotta-color-949cb0);
+}
+
+.callus {
+  padding-left: 1%;
+}
+
+.footer {
+  padding: 14px 40px;
+  border-top: 1px solid;
+}
+
+.footer {
+  ul {
+    li {
+      p {
+        margin-bottom: 0.5rem;
+        font: var(--tentkotta-font-style-normal) normal var(--tentkotta-font-weight-medium)
+          var(--tentkotta-font-size-18) / var(--tentkotta-line-spacing-38) var(--tentkotta-font-family-inter);
+        letter-spacing: var(--tentkotta-character-spacing-0);
+        color: var(--tentkotta-color-ffffff);
+      }
+    }
+  }
+  .icons {
+    padding-top: 3rem;
+    span {
+      // margin: 0 8px;
+      // min-height: 40%;
+      // background-color: var(--tentkotta-color-949cb0);
+      // padding: 8px;
+      // border-radius: 2px;
+    }
+  }
+}
+
+.footer .footer-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.footer li {
+  list-style-type: none;
+  line-height: 1.9;
+}
+
+.footer .lang-select {
+  margin-top: 2rem;
+  color: #999;
+  background-color: #000;
+  background-image: none;
+  border: 1px solid #333;
+  padding: 1rem 1.2rem;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: $small-below) {
+  .footer .footer-cols {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1px;
+  }
+  .footer {
+    padding: 10px;
+  }
+  .callus {
+    padding-left: 8px;
+    text-align: left;
+  }
+  .footer-cols {
+    ul {
+      margin-right: 0px;
+    }
+  }
+}
+
+@media screen and (max-width: 455px) {
+  .footer .footer-cols {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1px;
+  }
+  .footer,
+  .footer a {
+    font-size: 12px;
+  }
+  .footer {
+    ul {
+      li {
+        p {
+          margin-bottom: 4px;
+        }
+      }
+    }
+  }
+  .icons img {
+    height: 34px !important;
+    margin-right: 0 !important;
+  }
+  .footer .icons {
+    padding-top: 0 !important;
+  }
+}

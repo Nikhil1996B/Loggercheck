@@ -1,0 +1,49 @@
+/* App.scss * /
+
+/* Normalize */
+@import "~normalize-scss/sass/normalize";
+@import "~bootstrap/scss/bootstrap";
+@import "../../common-styles/variables";
+
+.appClass {
+  background-color: $black;
+  height: 100% !important;
+}
+body {
+  cursor: pointer;
+  height: 100%;
+  width: 100% !important;
+  min-height: 100%;
+  font-family: InterLight;
+  margin: 0;
+}
+/* Works on Firefox */
+* {
+  // scrollbar-width: thin;
+}
+body {
+  // scrollbar-width: thin;
+  scrollbar-color: #cccccc #e1540f;
+}
+body::-webkit-scrollbar-track {
+  background: var(#cccccc);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #cccccc;
+  border-radius: 6px;
+}
+
+.btn-primary:hover {
+  background-color: #e1540f !important;
+}
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  // width: 4px;
+  scrollbar-color: grey #e1540f;
+}
+
+@font-face {
+  font-family: "InterLight";
+  src: local("InterLight"), url("../../assets/fonts/InterLight.ttf") format("woff");
+  font-weight: normal;
+}

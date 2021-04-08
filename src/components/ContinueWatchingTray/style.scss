@@ -1,0 +1,99 @@
+/* Normalize */
+@import "~normalize-scss/sass/normalize";
+
+@import "../../common-styles/variables";
+
+.trayInfoWrapper {
+  // width: 100%;
+  padding: 0 2%;
+  padding-top: 2%;
+  .carousel-content > div > div > div > div {
+    margin: 0 2%;
+  }
+  .carousel-content > div > div > div > div > div > div:first-of-type {
+    height: 25vh;
+    background-position: center center;
+  }
+  .carousel-content > div > div > div {
+    margin-bottom: 1rem;
+  }
+  .slider-width {
+    width: 73%;
+    margin-left: 26%;
+  }
+  .content-section {
+    width: 30%;
+    margin-top: 2%;
+    position: absolute;
+    a {
+      color: coral;
+    }
+    a:hover {
+      color: "#ffffff";
+    }
+    .textSplitter {
+      padding-right: 40%;
+    }
+  }
+  h1 {
+    font: var(--tentkotta-font-style-normal) normal var(--tentkotta-font-weight-normal) 32px /
+      var(--tentkotta-line-spacing-38) var(--tentkotta-font-family-inter);
+    letter-spacing: var(--tentkotta-character-spacing-0);
+    color: var(--tentkotta-color-ffffff);
+  }
+  p {
+    font: var(--tentkotta-font-style-normal) normal var(--tentkotta-font-weight-normal) var(--tentkotta-font-size-15) /
+      var(--tentkotta-line-spacing-38) var(--tentkotta-font-family-inter);
+    letter-spacing: var(--tentkotta-character-spacing-0);
+    color: var(--tentkotta-color-949cb0);
+  }
+}
+.popular-movies-mob {
+  font: var(--tentkotta-font-style-normal) normal var(--tentkotta-font-weight-normal) 25px /
+    var(--tentkotta-line-spacing-38) var(--tentkotta-font-family-inter);
+  letter-spacing: var(--tentkotta-character-spacing-0);
+  color: var(--tentkotta-color-ffffff);
+  display: none;
+}
+@media screen and (max-width: $small-below) {
+  .carousel-content > div > div > div {
+    margin-bottom: 0;
+  }
+  .carousel-content {
+    .dLMntS,
+    .kCqxLA,
+    .frIiow,
+    .ffZXyu,
+    .fbcIlJ {
+      width: 150px;
+    }
+  }
+  .popular-movies-mob {
+    padding-left: 28px;
+    display: block;
+  }
+  .trayInfoWrapper {
+    .slider-width {
+      margin: 0;
+      width: 100%;
+    }
+  }
+  .content-section {
+    display: none;
+  }
+  .trayInfoWrapper {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 455px) {
+  .popular-movies-mob {
+    padding-left: 1%;
+    font-size: 14px !important;
+  }
+  .trayinfowrappertext {
+    .textbeneath,
+    .textsize {
+      font-size: 11px;
+    }
+  }
+}
