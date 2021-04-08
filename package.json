@@ -68,7 +68,7 @@
     "winston": "^3.3.3"
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "node server",
     "server": "node server",
     "build": "react-scripts build",
     "test": "react-scripts test",
