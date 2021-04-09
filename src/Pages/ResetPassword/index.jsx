@@ -86,7 +86,9 @@ function ResetPassword() {
                                             {message && <MessageContent>{status == 200 ?
                                                 <div>
                                                     <span>Password reset successfully. Please click</span>
-                                                    {" "}<a href="/signIn">Sign In</a> <span>to sign in</span>
+                                                    {" "}<a href="/signIn"
+                                                        aria-label={"navigate to sign in page"}
+                                                    >Sign In</a> <span>to sign in</span>
                                                 </div>
                                                 :
                                                 message}</MessageContent>}

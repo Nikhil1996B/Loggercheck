@@ -32,7 +32,11 @@ export const MessageContent = ({ isExist, children }) => {
           >
             {`Sorry, we can't find an account with this email address. Please try again or
                              ${" "}`}
-            <a href="/signUp" style={{ color: "#ffffff" }}>
+            <a
+              href="/signUp"
+              style={{ color: "#ffffff" }}
+              aria-label={"create a new account"}
+            >
               create a new account
             </a>
           </div>

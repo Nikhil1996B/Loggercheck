@@ -89,6 +89,7 @@ const HoverScreen = ({
         <Card.Img
           variant="top"
           src={backgroundImage}
+          alt={"hover to view"}
           style={hoverscreenstyle.image(smallsize)}
         />
         <Card.Body

@@ -35,7 +35,7 @@ function FullSideNav(props) {
       </Modal.Header>
       <Modal.Body>
         <div className="d-flex">
-          <a href="/home" className="logo-title">
+          <a href="/home" className="logo-title" aria-label={'navigate to home'}>
             <img
               src={profile}
               alt="profie-sidenav"
@@ -48,7 +48,7 @@ function FullSideNav(props) {
 
         </div>
         <div className="d-flex section">
-          <a href="/home" className="logo-title">
+          <a href="/home" className="logo-title" aria-label={'navigate to home'}>
             <img
               src={movieLogo}
               alt="movie-logo-sidenav"
@@ -58,7 +58,7 @@ function FullSideNav(props) {
           </a>
         </div>
         <div className="d-flex section">
-          <a href="/home" className="logo-title">
+          <a href="/home" className="logo-title" aria-label={'Navigate to home'}>
             <img
               src={seriesLogo}
               alt="series-logo-sidenav"
@@ -68,7 +68,7 @@ function FullSideNav(props) {
           </a>
         </div>
         <div className="d-flex section">
-          <a href="/home" className="logo-title">
+          <a href="/home" className="logo-title" aria-label={'Navigate to home'}>
             <img
               src={devicesLogo}
               alt="devices-logo-sidenav"
@@ -78,7 +78,7 @@ function FullSideNav(props) {
           </a>
         </div>
         <div className="d-flex section">
-          <a href="/home" className="logo-title">
+          <a href="/home" className="logo-title" aria-label={'Navigate to home'}>
             <img
               src={userLogo}
               alt="user-logo-sidenav"
@@ -88,7 +88,7 @@ function FullSideNav(props) {
           </a>
         </div>
         <div className="d-flex section">
-          <a href="/home" className="logo-title">
+          <a href="/home" className="logo-title" aria-label={'Navigate to home'}>
             <img
               src={logoutLogo}
               alt="logout-logo-sidenav"

@@ -7,12 +7,10 @@ import {
   Row,
   Image,
 } from "react-bootstrap";
-import { pathOr } from "ramda";
 import { HeroBanner } from "../../hero-banner-context";
 import {
   JubotronStyle,
   CardStyle,
-  SubscriptionStyleTitle,
 } from "./jumbotron-style";
 import JumbotronLayout from "./jubotronlayoutstyle";
 import CustomizedInputBase from "../../subscriptionForm";

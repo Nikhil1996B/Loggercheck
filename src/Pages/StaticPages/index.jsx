@@ -46,7 +46,10 @@ function StaticInformation() {
                 <Helmet>
                     <meta charSet="utf-8" />
                     <title>{pageName}</title>
-                    <link rel="" href="/terms-of-service" />
+                    <link
+                        rel=""
+                        href="/terms-of-service"
+                    />
                 </Helmet>
                 : null}
             <main className="staticpage-background" style={{}}>

@@ -53,7 +53,9 @@ export class HeroBanner extends Component {
         return (
             <div className="action-panel" data-test='actionComponent'>
                 <div className="deck form-check list-inline list-group-horizontal btn-group" role="group" data-toggle="buttons">
-                    <a href="/videoinfo" className="icon-link">
+                    <a href="/videoinfo" className="icon-link"
+                        aria-label={"more on video details"}
+                    >
                         <div className="logoWrapper">
                             <img
                                 src={like}
@@ -67,7 +69,11 @@ export class HeroBanner extends Component {
                         </div>
                     </a>
 
-                    <a href="/videoinfo" className="icon-link">
+                    <a
+                        href="/videoinfo"
+                        className="icon-link"
+                        aria-label={"more on video details"}
+                    >
                         <div className="logoWrapper">
                             <img
                                 src={share}
@@ -80,7 +86,9 @@ export class HeroBanner extends Component {
                         </span>
                         </div>
                     </a>
-                    <a href="/player" className="icon-link">
+                    <a href="/player" className="icon-link"
+                        aria-label={"play the video"}
+                    >
                         <div className="logoWrapper">
                             <img
                                 src={playBtn}
@@ -93,7 +101,10 @@ export class HeroBanner extends Component {
                         </span>
                         </div>
                     </a>
-                    <a href="/videoinfo" className="icon-link">
+                    <a href="/videoinfo" className="icon-link"
+                        aria-label={"more on video details"}
+
+                    >
                         <div className="logoWrapper">
                             <img
                                 src={download}

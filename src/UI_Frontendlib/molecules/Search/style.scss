@@ -75,7 +75,8 @@ input::-webkit-input-placeholder {
     color: transparent;
 }
 
-@font-face {
-    font-family: "InterLight";
-    src: local("InterLight"), url(../../../assets/fonts/InterLight.ttf) format("woff");
-}
+// @font-face {
+//     font-family: "InterLight";
+//     src: local("InterLight"), url(../../../assets/fonts/InterLight.ttf) format("woff");
+//     font-display: swap;
+// }

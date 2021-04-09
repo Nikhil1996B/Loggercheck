@@ -42,6 +42,7 @@ export default function Activatedeviceform() {
                       message: "invalid number",
                     },
                   })}
+                  aria-label={"active device passwrord field"}
                 />
                 {errors.currentpassword && (
                   <p style={activatedevicestyle.errormessage()}>

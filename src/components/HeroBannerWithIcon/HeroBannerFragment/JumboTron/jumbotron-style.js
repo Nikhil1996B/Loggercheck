@@ -1,5 +1,3 @@
-import { pathOr } from "ramda";
-
 export const JubotronStyle = (url = "../../assets/masterPoster.png") => {
   return {
     backgroundImage: ` linear-gradient(to bottom, rgba(19,23,34, 0.62), rgba(19,23,34, 0.83)), url(${url})`,

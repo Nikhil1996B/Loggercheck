@@ -12,7 +12,7 @@ import { FallBacktemplate } from './UI_Frontendlib/molecules/ErrorFallbackTempla
 render(
   store ?
     <Provider store={store}>
-      <PersistGate loading={<LoadingSpinner />} persistor={persistor}>
+      <PersistGate persistor={persistor}>
         <ErrorBoundary
           onError={(error, componentStack) => {
             loggerService.logger(error?.message, componentStack);

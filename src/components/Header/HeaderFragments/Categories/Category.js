@@ -9,14 +9,26 @@ export default function Category() {
         <>
           {displaycategories && (
             <Nav className={`mr-auto ${themename}-category category-wrapper`}>
-              <Nav.Link href="/?movies" className={"header-categories"}>
+              <Nav.Link
+                href="/?movies"
+                className={"header-categories"}
+                aria-label={"Movies"}
+              >
                 Movies
               </Nav.Link>
-              <Nav.Link href="/?web-series" className={"header-categories"}>
+              <Nav.Link
+                href="/?web-series"
+                className={"header-categories"}
+                aria-label={"Webseries"}
+              >
                 Web Series
               </Nav.Link>
               {isSignedIn && (
-                <Nav.Link href="/mylist" className={"header-categories"}>
+                <Nav.Link
+                  href="/mylist"
+                  className={"header-categories"}
+                  aria-label={"View my list"}
+                >
                   My List
                 </Nav.Link>
               )}

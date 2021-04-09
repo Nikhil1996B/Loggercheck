@@ -1,10 +1,12 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import { useHistory } from "react-router-dom";
 import Progress from "../../UI_Frontendlib/atoms/linerprogress";
-import HoverScreen from "./HoverScreen/hoverscreen";
+// import HoverScreen from "./HoverScreen/hoverscreen";
 
 const imageUrl = "https://image.tmdb.org/t/p/";
 const size = "w500";
+
+const HoverComponent = React.lazy(() => import("./HoverScreen/hoverscreen"));
 
 const MovieCard = ({
   movie,
@@ -78,7 +80,7 @@ const MovieCard = ({
         </div>
         {displayHoverState && (
           <div className="displayhoverScreen" id={`2${movie.id}`}>
-            <HoverScreen
+            <HoverComponent
               item={movie}
               api_key={""}
               media_type={""}

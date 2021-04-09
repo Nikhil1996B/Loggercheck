@@ -54,7 +54,11 @@ export const SideMenuContent = ({
       <Row>
         <Card style={CardStyle()}>
           <Row>
-            <Image src={movieclapper} style={ImageStyle()}></Image>
+            <Image
+              src={movieclapper}
+              alt={"checkout our movie clapper"}
+              style={ImageStyle()}
+            ></Image>
             <Card.Body
               style={{
                 border: "none",
@@ -70,7 +74,7 @@ export const SideMenuContent = ({
       <Row>
         <Card style={CardStyle()}>
           <Row>
-            <Image src={series} style={ImageStyle()}></Image>
+            <Image src={series} style={ImageStyle()} alt={"movies"}></Image>
             <Card.Body
               style={{
                 border: "none",
@@ -86,7 +90,11 @@ export const SideMenuContent = ({
       <Row>
         <Card style={CardStyle()}>
           <Row>
-            <Image src={devices} style={ImageStyle()}></Image>
+            <Image
+              src={devices}
+              alt={"devices support"}
+              style={ImageStyle()}
+            ></Image>
             <Card.Body
               style={{
                 border: "none",

@@ -24,12 +24,12 @@ export default function Accountdetailsglobalstyle() {
             }
           }
 
-          @font-face {
-            font-family: "InterLight";
-            src: local("InterLight"),
-              url("../../assets/fonts/InterLight.ttf") format("woff");
-            font-weight: normal;
-          }
+          // @font-face {
+          //   font-family: "InterLight";
+          //   src: local("InterLight"),
+          //     url("../../assets/fonts/InterLight.ttf") format("woff");
+          //   font-weight: normal;
+          // }
         `}
       />
     </>

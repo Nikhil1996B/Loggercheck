@@ -30,8 +30,18 @@ export default function Buttonsection({ handleClick, movie_id }) {
             <span className="btnTxtjumbotron-play-btn-txt">{"play"}</span>
           </Row>
         </Button>
-        <Image src={plus} roundedCircle className="jumbotron-icon-wrapper" />
-        <Image src={like} roundedCircle className="jumbotron-icon-wrapper" />
+        <Image
+          src={plus}
+          roundedCircle
+          className="jumbotron-icon-wrapper"
+          alt={"add to my list"}
+        />
+        <Image
+          src={like}
+          roundedCircle
+          className="jumbotron-icon-wrapper"
+          alt={"like the item"}
+        />
       </Row>
     </Container>
   );

@@ -25,7 +25,7 @@ function Subscription() {
             <div className="regContainer">
               <div className="stepHeader-container">
                 <div className="stepHeader">
-                  <img src={checkLogo} alt="checkLogo" />
+                  <img src={checkLogo} alt="check Logo" />
                   <h3>Subscription Activated!</h3>
                   <p>
                     Start enjoying your favorite <br></br> movies at Tentkotta

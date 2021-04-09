@@ -53,7 +53,7 @@ function ContinueWatchingTray({
                     {
                         viewAll ? <>
                             <hr />
-                            <p><a href="#trayinfo">View all &nbsp; <span>&#62;</span></a></p>
+                            <p><a href="#trayinfo" araia-label={'View all'}>View all &nbsp; <span>&#62;</span></a></p>
                         </> : null
                     }
                 </aside>

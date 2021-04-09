@@ -1,13 +1,8 @@
 import React from "react";
-import { pathOr } from "ramda";
 import leftarrow from "../../assets/left-arrow.svg";
-import { Card, Container, Row, Col, Image } from "react-bootstrap";
-import { CardTitleStyle, CardBodyStyle } from "./title-style.js";
-import { useMediaQuery } from "../../../Header/viewportHook";
+import { Card, Image } from "react-bootstrap";
 
 export default function Title({ title = "My List", breakpoint }) {
-  const bp = pathOr("", ["sm"])(breakpoint);
-  const sm = useMediaQuery("(max-width: 456px)");
   return (
     <Card className="float-left mylist-card-body">
       <Card.Body className="mylist-card-title">

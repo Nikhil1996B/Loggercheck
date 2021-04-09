@@ -68,7 +68,8 @@
   margin-top: 40%;
 }
 
-@font-face {
+/* @font-face {
   font-family: "InterLight";
   src: local("InterLight"), url(../../assets/fonts/InterLight.ttf) format("woff");
-}
+  font-display: swap;
+} */

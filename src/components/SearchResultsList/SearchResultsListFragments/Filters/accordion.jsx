@@ -27,7 +27,7 @@ function AccordionComponent({ items, filterType }) {
             {
                 filterType && filterType.map((type, index) => (
                     <Accordion
-                        defaultActiveKey={index == 0 ? '0' : "1"}
+                        defaultActiveKey={index === 0 ? '0' : "1"}
                         key={index}
                         style={{ marginBottom: '2%' }}
                         className={'filterclass'}>

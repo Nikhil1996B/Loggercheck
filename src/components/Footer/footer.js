@@ -25,21 +25,29 @@ function Footer() {
             <p>Quick Links</p>
           </li>
           <li>
-            <a href="/terms-of-use">Terms of Use</a>
+            <a href="/terms-of-use" aria-label={"terms of use"}>
+              Terms of Use
+            </a>
           </li>
           <li>
-            <a href="/privacy">Privacy Policy</a>
+            <a href="/privacy" aria-label={"tread our privacy policies"}>
+              Privacy Policy
+            </a>
           </li>
           <li>
-            <a href="/about">About Us</a>
+            <a href="/about" aria-label={"About us"}>
+              About Us
+            </a>
           </li>
           <li>
-            <a href="#footer">FAQ</a>
+            <a href="#footer" aria-label={"FAQ'S"}>
+              FAQ
+            </a>
           </li>
         </ul>
         <ul>
           <li>
-            <a href="#footer">
+            <a href="#footer" aria-label={"we provide 24/7 support"}>
               <p>Support (24X7)</p>
             </a>
           </li>

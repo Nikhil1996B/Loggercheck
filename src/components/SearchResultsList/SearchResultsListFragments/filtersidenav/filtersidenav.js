@@ -17,7 +17,7 @@ export const FilterSidenavBar = () => {
           onClick={() => setShowNav(true)}
           style={{ borderRadius: "5px" }}
         >
-          <Image src={filter} thumbnail />
+          <Image src={filter} thumbnail alt={"Thumbnail"} />
           <span
             style={{
               fontSize: `36px`,

@@ -47,7 +47,9 @@ function TrayComponentText({
                     {
                         viewAll ? <>
                             <hr />
-                            <p><a href="#trayinfo">View all &nbsp; <span>&#62;</span></a></p>
+                            <p><a href="#trayinfo"
+                                aria-label={"navigate to tray section"}
+                            >View all &nbsp; <span>&#62;</span></a></p>
                         </> : null
                     }
                 </aside>
