@@ -1,5 +1,4 @@
 import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
 import StripeCheckoutForm from '../../components/StripeCheckout/index';
 import Footer from '../../components/Footer/footer';
 import HeaderComp from '../../components/Header/headercomponent';
@@ -7,8 +6,6 @@ import './style.scss';
 
 
 const StripeCheckoutFlow = () => {
-    const dispatch = useDispatch();
-    const themes = useSelector(state => state.ThemeState);
     return (
         <>
             <main className="payment-background">

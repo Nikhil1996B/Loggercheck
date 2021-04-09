@@ -9,7 +9,6 @@ export default function SliderSection({
   breakpoint,
   title,
 }) {
-  const sm = pathOr("", ["sm"])(breakpoint);
   const size = useWindowSize();
 
   return (

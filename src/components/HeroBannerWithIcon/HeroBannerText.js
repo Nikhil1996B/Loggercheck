@@ -11,22 +11,22 @@ import plus from "./assets/plus.svg";
 
 export const HeroBannerText = () => {
   const [subscribed, setSubscribed] = useState(true);
-  const [movieDetails, setShowMovieDetails] = useState(false);
-  const [moviePreviewAvailable, setPreviewAvailable] = useState(true);
+  // const [movieDetails, setShowMovieDetails] = useState(false);
+  // const [moviePreviewAvailable, setPreviewAvailable] = useState(true);
   const themes = useSelector((state) => pathOr(null, ["ThemeState"])(state));
   const signedInStatus = useSelector((state) =>
     pathOr("", ["userAuth", "signInstatus", "responseCode"])(state)
   );
   const isSignedIn = equals(200, signedInStatus);
   const icons = pathOr("", ["themes"])(themes);
-  const playicon = pathOr("", ["playBtn"])(icons);
+  // const playicon = pathOr("", ["playBtn"])(icons);
   // Destructure the theme props
-  const {
-    bgColor,
-    primaryBtnColor: primBtCol,
-    primaryFontColor: pFontClr,
-    secondaryFontColor: sFontClr,
-  } = pathOr({}, ["colors"], themes);
+  // const {
+  //   bgColor,
+  //   primaryBtnColor: primBtCol,
+  //   primaryFontColor: pFontClr,
+  //   secondaryFontColor: sFontClr,
+  // } = pathOr({}, ["colors"], themes);
 
   // media query display
   const breakpoint = {

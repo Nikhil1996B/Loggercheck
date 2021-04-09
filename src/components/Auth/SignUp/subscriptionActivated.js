@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import checkLogo from "./assets/checkLogo.png";
-import { useLocation, useHistory } from "react-router-dom";
-import { useSelector, useDispatch } from "react-redux";
+import { useHistory } from "react-router-dom";
+import { useDispatch } from "react-redux";
 import { signupActions } from "../../../actions/signupactions";
 require("./subscribeActiate.scss");
 require("./style.scss");

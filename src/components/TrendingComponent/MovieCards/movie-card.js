@@ -2,7 +2,7 @@ import React from "react";
 import { pathOr } from "ramda";
 import { CardContainer, Moviecardsstyle } from "./movie-card-style";
 import { Container, Row, Col, Image } from "react-bootstrap";
-import { placeholder_url, placeholder_url_small } from "./placeholderimg/index";
+// import { placeholder_url, placeholder_url_small } from "./placeholderimg/index";
 import one from "./placeholderimg/1.svg";
 import two from "./placeholderimg/2.svg";
 import three from "./placeholderimg/3.svg";
@@ -19,8 +19,6 @@ export default function MovieCard({
   history,
 }) {
   const bp = pathOr("", ["sm"])(breakpoint);
-  const xl = pathOr("", ["xl"])(breakpoint);
-  const lg = pathOr("", ["lg"])(breakpoint);
   const firstItem = pathOr("", ["0"])(trending);
   const secondItem = trending ? trending.slice(1, 3) : [];
   const thirdItem = trending ? trending.slice(3, 5) : [];
@@ -104,7 +102,7 @@ export default function MovieCard({
                       </div>
                       <div style={{ ...CardContainer.bottomright() }}>
                         <Image
-                          src={key == 0 ? two : three}
+                          src={key === 0 ? two : three}
                           alt="movies list order"
                         />
                       </div>
@@ -147,7 +145,7 @@ export default function MovieCard({
                       </div>
                       <div style={{ ...CardContainer.bottomright() }}>
                         <Image
-                          src={key == 0 ? four : five}
+                          src={key === 0 ? four : five}
                           alt="movies list order"
                         />
                       </div>

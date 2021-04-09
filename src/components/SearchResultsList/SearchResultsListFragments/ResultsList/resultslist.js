@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { MovieCard } from "../../../searchBar/MovieCard";
 import { pathOr } from "ramda";
 import { useSelector } from "react-redux";
@@ -9,9 +9,7 @@ export const ResultsList = () => {
   const moviesRecord = useSelector((state) =>
     pathOr([], ["search", "records", "fetchedMovies"])(state)
   );
-  const loading = useSelector((state) =>
-    pathOr(false, ["search", "loading"])(state)
-  );
+
   if (!moviesRecord.length) {
     return (
       <div className="movie-list-container">

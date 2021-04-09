@@ -1,5 +1,4 @@
 import React from "react";
-import { pathOr } from "ramda";
 import Title from "./Title/title";
 import Filter from "./Filter/filter";
 import MovieCard from "./MovieCards/movie-card";

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useHistory } from "react-router-dom";
+// import { useHistory } from "react-router-dom";
 import { pathOr } from "ramda";
 import { useDispatch } from "react-redux";
 import { useForm } from "react-hook-form";
@@ -10,42 +10,43 @@ import {
   Button,
   Container,
   Row,
-  Image,
-  ListGroup,
+  // Image,
+  // ListGroup,
 } from "react-bootstrap";
 import {
   updatepasswordstyle,
   updateEmailFormStyle,
-  successscreen,
+  // successscreen,
 } from "./changeemailstyle";
-import { rules } from "../../../helpers/rules";
-import checkLogo from "./assets/checkLogo.png";
 
-const BackToAccount = ({ handleChangeEmail }) => {
-  const history = useHistory();
-  return (
-    <Container style={successscreen.container()}>
-      <ListGroup>
-        <ListGroup.Item style={successscreen.listitem()}>
-          <div style={successscreen.imageIcon()}>
-            <Image src={checkLogo} alt="check icon" />
-          </div>
-          <h1 style={successscreen.title()}>Email Changed</h1>
-          <p style={successscreen.subtitle()}>
-            You can start using your new email
-          </p>
-          <Button
-            style={updateEmailFormStyle.button()}
-            type="submit"
-            onClick={() => handleChangeEmail(false)}
-          >
-            {`BACK TO ACCOUNT`}
-          </Button>
-        </ListGroup.Item>
-      </ListGroup>
-    </Container>
-  );
-};
+import { rules } from "../../../helpers/rules";
+// import checkLogo from "./assets/checkLogo.png";
+
+// const BackToAccount = ({ handleChangeEmail }) => {
+//   const history = useHistory();
+//   return (
+//     <Container style={successscreen.container()}>
+//       <ListGroup>
+//         <ListGroup.Item style={successscreen.listitem()}>
+//           <div style={successscreen.imageIcon()}>
+//             <Image src={checkLogo} alt="check icon" />
+//           </div>
+//           <h1 style={successscreen.title()}>Email Changed</h1>
+//           <p style={successscreen.subtitle()}>
+//             You can start using your new email
+//           </p>
+//           <Button
+//             style={updateEmailFormStyle.button()}
+//             type="submit"
+//             onClick={() => handleChangeEmail(false)}
+//           >
+//             {`BACK TO ACCOUNT`}
+//           </Button>
+//         </ListGroup.Item>
+//       </ListGroup>
+//     </Container>
+//   );
+// };
 
 const Updateemailform = ({
   handleChangeEmail,

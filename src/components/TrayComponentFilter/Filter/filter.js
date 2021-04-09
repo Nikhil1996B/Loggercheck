@@ -19,7 +19,7 @@ export default function Filter({
           {filtertype &&
             filtertype.map((filterby, key) => (
               <Col
-                style={filterTypeTxtStyle.text(selectedGenere == filterby, sm)}
+                style={filterTypeTxtStyle.text(selectedGenere === filterby, sm)}
                 key={key}
                 className={`${filterby} ${key} trayfilterby`}
                 onClick={() => {

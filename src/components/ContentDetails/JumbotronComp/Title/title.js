@@ -3,7 +3,7 @@ import { Card, Row, Image } from "react-bootstrap";
 import { CardStyle } from "./titlestyle";
 import fullhd from "../../assets/fullhd.svg";
 import subtitles from "../../assets/subtitles.svg";
-import { useMediaQuery } from "../../../Header/viewportHook";
+
 export default function Title({
   title,
   overview,
@@ -12,7 +12,6 @@ export default function Title({
   release_date,
   adult,
 }) {
-  const sm = useMediaQuery("(max-width: 456px)");
   return (
     <Card style={CardStyle.card()}>
       <Card.Body style={CardStyle.card()}>

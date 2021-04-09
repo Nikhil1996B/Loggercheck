@@ -71,9 +71,9 @@ function SignIn() {
   const loading = useSelector((state) =>
     pathOr(false, ["userAuth", "loading"])(state)
   );
-  const preEmailAuth = useSelector((state) =>
-    pathOr("", ["userAuth", "signInstatus", "responseCode"])(state)
-  );
+  // const preEmailAuth = useSelector((state) =>
+  //   pathOr("", ["userAuth", "signInstatus", "responseCode"])(state)
+  // );
   const message = useSelector((state) =>
     pathOr("", ["userAuth", "signInstatus", "message"])(state)
   );

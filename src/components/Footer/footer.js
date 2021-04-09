@@ -1,6 +1,4 @@
 import React from "react";
-import { useSelector } from "react-redux";
-import pathOr from "ramda/src/pathOr";
 import facebookimg from "./assets/facebook.svg";
 import instagram from "./assets/instagram.svg";
 import twittersign from "./assets/twitter-sign.svg";

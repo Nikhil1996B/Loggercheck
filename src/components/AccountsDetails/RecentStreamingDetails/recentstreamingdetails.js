@@ -1,13 +1,10 @@
 import React from "react";
-import { Container, Card, Row, Col, ListGroup, Button } from "react-bootstrap";
-import { useMediaQuery } from "../../../components/Header/viewportHook";
+import { ListGroup, Button } from "react-bootstrap";
 import {
   recentstreamingstyle,
   RecentStreamingGlobalStyle,
 } from "./recentstreamingdetailsstyle";
 export default function Recenthistorydetails() {
-  const sm = useMediaQuery("(max-width: 576px)");
-
   return (
     <>
       <RecentStreamingGlobalStyle />

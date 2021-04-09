@@ -1,7 +1,5 @@
 import React from "react";
 import { Global, css } from "@emotion/react";
-import { pathOr } from "ramda";
-import { useMediaQuery } from "../Header/viewportHook";
 
 export const MyListLayout = () => {
   // const themeObj = useSelector((state) => pathOr(null, ['ThemeState', 'layout'])(state));

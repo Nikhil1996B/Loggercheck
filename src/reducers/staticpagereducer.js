@@ -1,4 +1,3 @@
-import { resetPwdEmail } from "../constants/userauthconstants.js";
 import { actions } from "../actions/staticpageactions.js";
 
 const initialState = {};

@@ -11,7 +11,6 @@ import { Container, Row } from "react-bootstrap";
 import { ListMovieGlobalStyle } from "./listmoviesstyle";
 import { MyListLayout } from "./ListMoviesLayout";
 import { MyListActions } from "../../actions/mylistactions";
-import { useMediaQuery } from "../../components/Header/viewportHook";
 
 // require('./style.scss');
 
@@ -22,7 +21,6 @@ const MyListList = ({ movies, title }) => {
     pathOr(false, ["mylist", "loading"])(state)
   );
   const dispatch = useDispatch();
-  const xxl = useMediaQuery("(min-width: 1200px)");
 
   useEffect(() => {
     dispatch(MyListActions.MyListReq("action"));

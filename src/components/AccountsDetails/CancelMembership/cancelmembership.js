@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { useHistory } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { useForm } from "react-hook-form";
 import { cancelMembershipAction } from "../../../actions/cancelmembershipaction";
@@ -9,42 +8,41 @@ import {
   Button,
   Container,
   Row,
-  Image,
-  ListGroup,
+  // Image,
+  // ListGroup,
 } from "react-bootstrap";
 import {
   updatepasswordstyle,
   updateEmailFormStyle,
-  successscreen,
+  // successscreen,
 } from "./cancelmembershipstyle";
-import { rules } from "../../../helpers/rules";
-import checkLogo from "../ChangeEmail/assets/checkLogo.png";
+// import { rules } from "../../../helpers/rules";
+// import checkLogo from "../ChangeEmail/assets/checkLogo.png";
 
-const BackToAccount = ({ handleCancelMembership }) => {
-  const history = useHistory();
-  return (
-    <Container style={successscreen.container()}>
-      <ListGroup>
-        <ListGroup.Item style={successscreen.listitem()}>
-          <div style={successscreen.imageIcon()}>
-            <Image src={checkLogo} alt="check icon" />
-          </div>
-          <h1 style={successscreen.title()}>Cancellation Request Submitted</h1>
-          <p style={successscreen.subtitle()}>
-            Our executive will get in touch with you shortly
-          </p>
-          <Button
-            style={updateEmailFormStyle.button()}
-            type="submit"
-            onClick={() => handleCancelMembership(false)}
-          >
-            {`BACK TO ACCOUNT`}
-          </Button>
-        </ListGroup.Item>
-      </ListGroup>
-    </Container>
-  );
-};
+// const BackToAccount = ({ handleCancelMembership }) => {
+//   return (
+//     <Container style={successscreen.container()}>
+//       <ListGroup>
+//         <ListGroup.Item style={successscreen.listitem()}>
+//           <div style={successscreen.imageIcon()}>
+//             <Image src={checkLogo} alt="check icon" />
+//           </div>
+//           <h1 style={successscreen.title()}>Cancellation Request Submitted</h1>
+//           <p style={successscreen.subtitle()}>
+//             Our executive will get in touch with you shortly
+//           </p>
+//           <Button
+//             style={updateEmailFormStyle.button()}
+//             type="submit"
+//             onClick={() => handleCancelMembership(false)}
+//           >
+//             {`BACK TO ACCOUNT`}
+//           </Button>
+//         </ListGroup.Item>
+//       </ListGroup>
+//     </Container>
+//   );
+// };
 
 const Cancelmembershipform = ({
   handleCancelMembership,

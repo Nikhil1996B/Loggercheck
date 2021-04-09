@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { pathOr } from "ramda";
 import { useSelector } from "react-redux";
 import PromoCode from "./promoCode";

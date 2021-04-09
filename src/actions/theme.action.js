@@ -1,6 +1,5 @@
 import { themesConstants } from "../constants";
 import { themeService } from "../services";
-import Cookies from "js-cookie";
 
 export const themeActions = {
   themes,

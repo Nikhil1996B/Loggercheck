@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import "./style.scss";
-import { useHistory } from 'react-router-dom';
 import HeaderComp from '../../components/Header/headercomponent';
 import Footer from '../../components/Footer/footer';
 import { useForm } from "react-hook-form";
 import { resetPasswordActions } from "../../actions/resetpwdactions";
-import { useLocation } from "react-router-dom";
 import LoadingSpinner from "../../UI_Frontendlib/atoms/loadingSpinner";
 import { MessageContent } from "../../components/Auth/SignIn/index";
 import { analyticsService } from '../../services/analyticsapi.service';
@@ -17,17 +15,16 @@ import { pathOr } from 'ramda';
 function ResetPassword() {
     const [show, setShow] = useState(false);
     const [oobCode, setoobCode] = useState('');
-    const [Navshow, setNavShow] = useState(false);
-    const [displayFullSideNav, setdisplayFullSideNav] = useState(false);
-    const handleNavModal = () => setNavShow(!Navshow);
-    const handleModal = () => setShow(true);
+    // const [Navshow, setNavShow] = useState(false);
+    // const [displayFullSideNav, setdisplayFullSideNav] = useState(false);
+    // const handleNavModal = () => setNavShow(!Navshow);
+    // const handleModal = () => setShow(true);
 
-    const history = useHistory();
     const dispatch = useDispatch();
     const [inputs, setInputs] = useState({
         password: "",
     });
-    const themes = useSelector(state => state.ThemeState);
+    // const themes = useSelector(state => state.ThemeState);
     const status = useSelector(state => pathOr(null, ['PwdResetState', 'status', 'responseCode'])(state));
     const loading = useSelector(state => pathOr(false, ['PwdResetState', 'loading'])(state));
     const message = useSelector(state => pathOr('', ['PwdResetState', 'status', 'message'])(state));
@@ -40,6 +37,7 @@ function ResetPassword() {
         // TODO: Reset password API call
         dispatch(resetPasswordActions.resetPassword(oobCode, values.resetpassword));
     }
+
     useEffect(() => {
         analyticsService.addeventanalytics('pageview', 'resetpassword');
         return () => {
@@ -47,9 +45,6 @@ function ResetPassword() {
         }
     }, []);
 
-    function useQuery() {
-        return new URLSearchParams(useLocation().search);
-    }
 
     useEffect(() => {
         const urlParams = new URLSearchParams(window.location.search);
@@ -61,10 +56,6 @@ function ResetPassword() {
         return () => {
         }
     }, [])
-
-    const handleSigninClick = () => {
-        return history.push('/signIn');
-    }
 
     if (loading) {
         return <LoadingSpinner />

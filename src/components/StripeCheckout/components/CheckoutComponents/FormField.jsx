@@ -16,17 +16,17 @@ display: flex;
   }
 `;
 
-const Label = styled.label`
-  width: 20%;
-  min-width: 70px;
-  padding: 11px 0;
-  color: #585858;
-  overflow: hidden;
-  font-size: 16px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  border-right: 1px solid ##585858;
-`;
+// const Label = styled.label`
+//   width: 20%;
+//   min-width: 70px;
+//   padding: 11px 0;
+//   color: #585858;
+//   overflow: hidden;
+//   font-size: 16px;
+//   text-overflow: ellipsis;
+//   white-space: nowrap;
+//   border-right: 1px solid ##585858;
+// `;
 
 const Input = styled.input`
   font-size: 16px;

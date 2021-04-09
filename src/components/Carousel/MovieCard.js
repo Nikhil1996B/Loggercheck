@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from "react";
+import React from "react";
 import { useHistory } from "react-router-dom";
 import Progress from "../../UI_Frontendlib/atoms/linerprogress";
 // import HoverScreen from "./HoverScreen/hoverscreen";

@@ -3,7 +3,7 @@ import { render } from "react-dom";
 import { Provider } from "react-redux";
 import { store, persistor } from "./helpers/store";
 import { App } from "./Pages/App/App";
-import { LoadingSpinner } from './UI_Frontendlib/atoms/loadingSpinner';
+// import { LoadingSpinner } from './UI_Frontendlib/atoms/loadingSpinner';
 import { PersistGate } from 'redux-persist/integration/react';
 import { loggerService } from './services/loggingService';
 import { ErrorBoundary } from 'react-error-boundary';

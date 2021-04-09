@@ -1,6 +1,4 @@
-import { types } from "../actions/theme.action";
 import { themesConstants } from "../constants";
-import Cookies from "js-cookie";
 
 const ThemeReducer = (state = {}, action) => {
   switch (action.type) {

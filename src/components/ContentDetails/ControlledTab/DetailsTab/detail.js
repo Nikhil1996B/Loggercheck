@@ -1,10 +1,8 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import { CardStyle } from "./detailsstyle";
-import { useMediaQuery } from "../../../Header/viewportHook";
 
 export const DetailsTab = ({ production, writing, crew }) => {
-  const sm = useMediaQuery("(max-width:456px)");
   return (
     <>
       <Container className="details-wrapper">

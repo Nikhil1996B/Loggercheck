@@ -1,15 +1,10 @@
 import React, { useState } from "react";
-import SideNav from "../../components/SideNav/SideNav"
-import FullSideNav from "../../components/FullSideNav/FullSideNav"
-import Hamburger from "../../assets/images/hamburger.png";
 import Player from "../../components/Player/Player";
 import HeaderComp from "../../components/Header/headercomponent";
 import Footer from "../../components/Footer/footer";
 import "./VideoPage.css";
 
 function VideoPage() {
-    const [Navshow, setNavShow] = useState(false);
-    const handleNavModal = () => setNavShow(!Navshow);
     let source = {
         sources: [{
             // src: "https://d1gnaphp93fop2.cloudfront.net/videos/5fb40b3d97d6b12d9641614c/mp4/_1080.mp4",

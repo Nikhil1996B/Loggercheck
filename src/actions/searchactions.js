@@ -13,6 +13,7 @@ export const searchActions = {
 
 function SearchReq(query) {
   return (dispatch) => {
+    dispatch(request({ type: types.GET_SEARCH_MOVIES }));
     Movies.search(query)
       .then((res) => {
         dispatch({ type: types.GET_SEARCH_LOADING });

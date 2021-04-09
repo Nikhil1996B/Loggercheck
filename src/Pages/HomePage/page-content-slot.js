@@ -60,7 +60,7 @@ const availableHomePageComponent = [
 
 function HomePageContent({ user }) {
   // Initial setup
-  const themes = useSelector((state) => state.ThemeState);
+  // const themes = useSelector((state) => state.ThemeState);
 
   // React-redux setup
   const dispatch = useDispatch();

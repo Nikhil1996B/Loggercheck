@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { pathOr } from 'ramda';
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import './style.scss';
 import HeaderComp from '../../components/Header/headercomponent';
@@ -61,20 +61,9 @@ const plansDetails = {
 }
 
 function ChangePlan() {
-    const [show, setShow] = useState(false);
-    const [Navshow, setNavShow] = useState(false);
-    const [displayFullSideNav, setdisplayFullSideNav] = useState(false);
-    const handleNavModal = () => setNavShow(!Navshow);
-    const handleModal = () => setShow(true);
-
     const dispatch = useDispatch();
     const history = useHistory();
 
-    const themes = useSelector(state => pathOr(null, ['ThemeState'])(state));
-
-    const handleSignInClick = () => {
-
-    }
     const handleSubscriptionPlanClick = (membership) => {
         const selectedPlan = pathOr(null, ['title'])(membership);
         const main = pathOr(null, ['main'])(membership);

@@ -54,14 +54,14 @@ export default function HeaderComp() {
     // logo - currying technique
     const logo = pathOr('', ['logoImg'])(themes);
     // const displayLogo = pathOr(false, ['logo'])(headerLayout);
-    const account = pathOr('', ['icons', 'account'])(themes);
+    // const account = pathOr('', ['icons', 'account'])(themes);
     const icons = pathOr('', ['icons'])(themes);
 
     // Destructure the theme props 
     const {
         primaryBtnColor: primBtCol,
         primaryFontColor: pFontClr,
-        secondaryFontColor: sFontClr
+        // secondaryFontColor: sFontClr
     } = pathOr({}, ['colors'], themes);
 
     // Avatar icon click 

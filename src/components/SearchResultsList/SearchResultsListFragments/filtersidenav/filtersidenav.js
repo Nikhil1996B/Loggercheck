@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Row, Col, Image } from "react-bootstrap";
 import SideNav from "react-simple-sidenav";
 import Filter from "../Filters";

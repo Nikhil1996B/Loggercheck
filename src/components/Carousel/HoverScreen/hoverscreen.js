@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Card, Container } from "react-bootstrap";
 // import VideoPreview from "../../../UI_Frontendlib/molecules/previewVideoPlayer";
 import Title from "./HoverScreenFragments/Title/title";
@@ -16,29 +16,30 @@ const HoverScreen = ({
   displayCard,
   index,
 }) => {
-  const [moviePreviewAvailable, setPreviewAvailable] = useState(true);
-  const [sendConfigurations, setSendConfigurations] = useState({
-    position: "absolute",
-    width: "100%",
-    left: "50%",
-    top: "23%",
-    // height: "100%",
-    transform: "translate(-50%, -50%)",
-    zIndex: "1",
-    opacity: 0,
-    backgroundSize: "cover",
-    overflow: "hidden",
-    border: "none",
-    outline: "none",
-  });
-  const config = {
-    url:
-      "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4",
-  };
+  // const [moviePreviewAvailable, setPreviewAvailable] = useState(true);
+  // const [sendConfigurations, setSendConfigurations] = useState({
+  //   position: "absolute",
+  //   width: "100%",
+  //   left: "50%",
+  //   top: "23%",
+  //   // height: "100%",
+  //   transform: "translate(-50%, -50%)",
+  //   zIndex: "1",
+  //   opacity: 0,
+  //   backgroundSize: "cover",
+  //   overflow: "hidden",
+  //   border: "none",
+  //   outline: "none",
+  // });
+
+  // const config = {
+  //   url:
+  //     "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4",
+  // };
   // config videoautoplay
-  const [autoPlayConfig, setAutoPlayConfig] = React.useState({
-    opacity: 0,
-  });
+  // const [autoPlayConfig, setAutoPlayConfig] = React.useState({
+  //   opacity: 0,
+  // });
   // React.useEffect(() => {
   //   let timer = setTimeout(function () {
   //     setAutoPlayConfig({ ...autoPlayConfig, opacity: 1 });

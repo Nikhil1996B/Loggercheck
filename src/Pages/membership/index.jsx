@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { pathOr } from 'ramda';
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import './style.scss';
 import HeaderComp from '../../components/Header/headercomponent';

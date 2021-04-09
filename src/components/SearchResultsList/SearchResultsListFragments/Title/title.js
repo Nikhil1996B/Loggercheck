@@ -1,6 +1,6 @@
 import React from "react";
 import { pathOr } from "ramda";
-import { Card, Container, Row, Col } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import { CardTitleStyle, CardBodyStyle } from "./title-style.js";
 
 export default function Title({ title = "Movies", breakpoint }) {

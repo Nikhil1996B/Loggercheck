@@ -1,11 +1,6 @@
-import { tos, privacy, about } from "./config";
+import { tos } from "./config";
 import { handleResponse } from "./api.service";
 import { __decrypttoken } from "../helpers/aes";
-const patterns = {
-  tos,
-  privacy,
-  about,
-};
 
 export const staticInfoService = {
   getInfo,

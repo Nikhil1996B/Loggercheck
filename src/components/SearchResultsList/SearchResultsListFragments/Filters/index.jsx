@@ -1,28 +1,28 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import leftarrow from '../../assets/left-arrow.svg';
-import Collapsible from 'react-collapsible';
+// import Collapsible from 'react-collapsible';
 import AccordionComponent from './accordion.jsx';
 import { Button, Row, Col, Image } from 'react-bootstrap';
 import './style.scss';
 
-const List = ({ items }) => {
-    if (!items) {
-        return null;
-    }
-    return (
-        <>
-            {
-                items.map((type, index) => (
-                    <section className="list-container" key={index}>
-                        <div className="list-item">
-                            {type}
-                        </div>
-                    </section>
-                ))
-            }
-        </>
-    )
-};
+// const List = ({ items }) => {
+//     if (!items) {
+//         return null;
+//     }
+//     return (
+//         <>
+//             {
+//                 items.map((type, index) => (
+//                     <section className="list-container" key={index}>
+//                         <div className="list-item">
+//                             {type}
+//                         </div>
+//                     </section>
+//                 ))
+//             }
+//         </>
+//     )
+// };
 
 export default function Filter({ setShowNav }) {
     const [category, setCategory] = useState(['Drama', 'Love', 'Romance', 'horror', 'Sci-fi', 'Action', 'Anime']);

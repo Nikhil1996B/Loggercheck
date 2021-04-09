@@ -7,7 +7,7 @@ import MyListList from "../../components/MyListList/MyList";
 import MyListPageLayout from "./mylistpagelayout";
 import Footer from "../../components/Footer/footer";
 import { analyticsService } from "../../services/analyticsapi.service";
-import { usePrevious } from "../../helpers/prevValuehook";
+// import { usePrevious } from "../../helpers/prevValuehook";
 
 // Once the user tries to navigate to the pages on website,
 // there will be a configuration pertaining to the slots in which
@@ -38,7 +38,7 @@ const availableSearchResultsPageComponent = [
 function MyListPagePageContent({ user }) {
   // Initial setup
   const themes = useSelector((state) => state.ThemeState);
-  const prevThemeValue = usePrevious(themes);
+  // const prevThemeValue = usePrevious(themes);
   const themeName = pathOr("", ["themeName"])(themes);
   // const themesLoading = useSelector(state => pathOr(false, ['ThemeState', 'loading'])(state))
   // const reload = useSelector(state => pathOr('', ['userAuth', 'reload'])(state));

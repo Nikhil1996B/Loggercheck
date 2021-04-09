@@ -8,42 +8,42 @@ import {
   Button,
   Container,
   Row,
-  Image,
-  ListGroup,
+  // Image,
+  // ListGroup,
 } from "react-bootstrap";
 import {
   updatepasswordstyle,
   updateEmailFormStyle,
-  successscreen,
+  // successscreen,
 } from "./changepasswordstyle";
 // import { rules } from '../../../helpers/rules';
-import checkLogo from "../ChangeEmail/assets/checkLogo.png";
+// import checkLogo from "../ChangeEmail/assets/checkLogo.png";
 
-const BackToAccount = ({ handleChangepassword }) => {
-  // const history = useHistory();
-  return (
-    <Container style={successscreen.container()}>
-      <ListGroup>
-        <ListGroup.Item style={successscreen.listitem()}>
-          <div style={successscreen.imageIcon()}>
-            <Image src={checkLogo} alt="check icon" />
-          </div>
-          <h1 style={successscreen.title()}>Password Changed</h1>
-          <p style={successscreen.subtitle()}>
-            You can start using your new password
-          </p>
-          <Button
-            style={updateEmailFormStyle.button()}
-            type="submit"
-            onClick={() => handleChangepassword(false)}
-          >
-            {`BACK TO ACCOUNT`}
-          </Button>
-        </ListGroup.Item>
-      </ListGroup>
-    </Container>
-  );
-};
+// const BackToAccount = ({ handleChangepassword }) => {
+//   // const history = useHistory();
+//   return (
+//     <Container style={successscreen.container()}>
+//       <ListGroup>
+//         <ListGroup.Item style={successscreen.listitem()}>
+//           <div style={successscreen.imageIcon()}>
+//             <Image src={checkLogo} alt="check icon" />
+//           </div>
+//           <h1 style={successscreen.title()}>Password Changed</h1>
+//           <p style={successscreen.subtitle()}>
+//             You can start using your new password
+//           </p>
+//           <Button
+//             style={updateEmailFormStyle.button()}
+//             type="submit"
+//             onClick={() => handleChangepassword(false)}
+//           >
+//             {`BACK TO ACCOUNT`}
+//           </Button>
+//         </ListGroup.Item>
+//       </ListGroup>
+//     </Container>
+//   );
+// };
 
 const Updatepasswordform = ({
   handleChangepassword,

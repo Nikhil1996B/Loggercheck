@@ -1,13 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Global, css } from "@emotion/react";
-import { useSelector, useDispatch } from "react-redux";
-import { useHistory } from "react-router-dom";
+import { useSelector } from "react-redux";
 import { pathOr } from "ramda";
 
 const ContentDetailsPageLayout = () => {
-  const themeObj = useSelector((state) =>
-    pathOr(null, ["ThemeState", "layout"])(state)
-  );
   const bgcolor = useSelector((state) =>
     pathOr("#131722", ["ThemeState", "colors", "bgColor", "color", "value"])(
       state
